@@ -4,9 +4,11 @@ import logo from '../../../assets/header/bank-logo.png'
 import communicationIcon from '../../../assets/header/chat_icon.png'
 import s from './Header.module.scss'
 
+const setActive = ({ isActive }) => isActive ? 'active-link' : '';
+
 const Header = () => {
   return (
-    <div className='container'>
+    <>
       <div className={s['upper-header']}>
         <div className={s['upper-header__logo']}>
           <img src={logo} alt="logo" />
@@ -35,16 +37,16 @@ const Header = () => {
       </div>
       <nav className={s['lower-header']}>
         <ul>
-          <li><NavLink to='/' className='active'>Главная</NavLink></li>
-          <li><NavLink to='' className='active'>Переводы</NavLink></li>
-          <li><NavLink to='' className='active'>Платежи</NavLink></li>
-          <li><NavLink to='' className='active'>Вклады и счета</NavLink></li>
-          <li><NavLink to='' className='active'>Карты</NavLink></li>
-          <li><NavLink to='' className='active'>Кредиты</NavLink></li>
-          <li><NavLink to='' className='active'>История</NavLink></li>
+          <li><NavLink to='/' className={setActive}>Главная</NavLink></li>
+          <li><NavLink to='/transfers' className={setActive} >Переводы</NavLink></li>
+          <li><NavLink to='/payments' className={setActive} >Платежи</NavLink></li>
+          <li><NavLink to='/depositsandaccounts' className={setActive} >Вклады и счета</NavLink></li>
+          <li><NavLink to='/cards' className={setActive} >Карты</NavLink></li>
+          <li><NavLink to='/credits' className={setActive} >Кредиты</NavLink></li>
+          <li><NavLink to='/history' className={setActive} >История</NavLink></li>
         </ul>
       </nav>
-    </div>
+    </>
   )
 }
 

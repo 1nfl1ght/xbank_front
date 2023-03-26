@@ -40,3 +40,25 @@
     }
   }
 }
+
+.lower-header {
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding: 0px;
+    a {
+      text-decoration: none;
+      font-family: sans-serif;
+      color: #4f4f4f;
+      font-size: 29.17px;
+      padding-bottom: 10px;
+      transition: .2s;
+      border-bottom: 5px solid rgba(169, 210, 187, 0)
+    }
+    a:hover {
+      border-bottom: 5px solid rgba(169, 210, 187, 1)
+    }
+  }
+}

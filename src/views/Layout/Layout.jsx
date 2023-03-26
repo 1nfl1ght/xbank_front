@@ -6,11 +6,13 @@ import Header from './header/Header'
 const Layout = () => {
   return (
     <>
-      <Header />
-
-      <Outlet />
-
-      <Footer />
+      <div className='container'>
+        <Header />
+        <div className='line'></div>
+        <Outlet />
+        <div className='line'></div>
+        <Footer />
+      </div>
     </>
   )
 }
