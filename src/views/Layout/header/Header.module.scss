@@ -1,0 +1,64 @@
+.upper-header {
+  font-family: sans-serif;
+  color: #4f4f4f;
+  display: flex;
+  padding-top: 10px;
+  p {
+    margin: 0px;
+  }
+  &__logo {
+    img {
+      filter: invert(29%) sepia(25%) saturate(11%) hue-rotate(317deg) brightness(93%) contrast(87%);
+      width: 79px;
+      height: 79px;
+    }
+  }
+  .contacts {
+    margin-left: 42px;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    .contacts__phone {
+      font-size: 32.89px;
+    }
+    .contacts__phone__description {
+      font-size: 25px;
+    }
+  }
+  .upper-header__communication-with-bank {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 24px;
+      width: 23px;
+      margin-right: 5px;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.lower-header {
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding: 0px;
+    a {
+      text-decoration: none;
+      font-family: sans-serif;
+      color: #4f4f4f;
+      font-size: 29.17px;
+      padding-bottom: 10px;
+      transition: .2s;
+      border-bottom: 5px solid rgba(169, 210, 187, 0)
+    }
+    a:hover {
+      border-bottom: 5px solid rgba(169, 210, 187, 1)
+    }
+  }
+}
